@@ -1,0 +1,42 @@
+form {
+    width: 100%;
+    color: #57595C;
+    display: grid;
+    justify-content: center;
+}
+
+label, button {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.sfInput {
+    border: 2px solid #EEE;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 8px 10px;
+}
+
+button {
+    box-shadow: none;
+    color: #fff;
+    background: #EE2A24;
+    border-color: #EE2A24;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 11px 21px;
+}
+
+.sfAsterix {
+    color: #bf0000;
+    display: inline;
+    margin-right: 5px;
+}
+
+select {
+    background: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
