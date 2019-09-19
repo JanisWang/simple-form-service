@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "42ec03060923a1b158f60123375d61f5",
+    "revision": "7f274e3f14da81535de89cbf0f2bc83a",
     "url": "/simple-form-service/index.html"
   },
   {
-    "revision": "f00f65fd3f94e91a545a",
-    "url": "/simple-form-service/static/css/main.ccc4fb23.chunk.css"
+    "revision": "0ac5b609a4ca153ed6f1",
+    "url": "/simple-form-service/static/css/main.f1172e64.chunk.css"
   },
   {
     "revision": "3c4af4186c4c1e0fdbfd",
     "url": "/simple-form-service/static/js/2.fc6c6f78.chunk.js"
   },
   {
-    "revision": "f00f65fd3f94e91a545a",
+    "revision": "0ac5b609a4ca153ed6f1",
     "url": "/simple-form-service/static/js/main.80b893b6.chunk.js"
   },
   {

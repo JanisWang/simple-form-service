@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/simple-form-service/static/css/main.ccc4fb23.chunk.css",
+    "main.css": "/simple-form-service/static/css/main.f1172e64.chunk.css",
     "main.js": "/simple-form-service/static/js/main.80b893b6.chunk.js",
     "main.js.map": "/simple-form-service/static/js/main.80b893b6.chunk.js.map",
     "runtime~main.js": "/simple-form-service/static/js/runtime~main.5531d02e.js",
@@ -8,8 +8,8 @@
     "static/js/2.fc6c6f78.chunk.js": "/simple-form-service/static/js/2.fc6c6f78.chunk.js",
     "static/js/2.fc6c6f78.chunk.js.map": "/simple-form-service/static/js/2.fc6c6f78.chunk.js.map",
     "index.html": "/simple-form-service/index.html",
-    "precache-manifest.2d24993b0d41c0fb05c0442400447fca.js": "/simple-form-service/precache-manifest.2d24993b0d41c0fb05c0442400447fca.js",
+    "precache-manifest.ff82eda295e93080e28f0b5ba8b309d7.js": "/simple-form-service/precache-manifest.ff82eda295e93080e28f0b5ba8b309d7.js",
     "service-worker.js": "/simple-form-service/service-worker.js",
-    "static/css/main.ccc4fb23.chunk.css.map": "/simple-form-service/static/css/main.ccc4fb23.chunk.css.map"
+    "static/css/main.f1172e64.chunk.css.map": "/simple-form-service/static/css/main.f1172e64.chunk.css.map"
   }
 }
