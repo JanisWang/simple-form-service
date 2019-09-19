@@ -23,26 +23,32 @@ export default class SimpleForm extends Component {
     this.setState({
       [stateField]: inputValue,
     });
-    console.log(this.state);
   }
   async handleSubmit(event) {
     event.preventDefault();
     const { firstName, lastName, email, states } = this.state;
-    await axios.post(
-      config.endpoint,
+    let params = {
+      "id": "usr-" + uuid4(),
+      "firstName": `${firstName}`,
+      "lastName": `${lastName}`,
+      "email": `${email}`,
+      "states": `${states}`
+    }
+    await axios(
       {
-        "id": "usr-" + uuid4(),
-        "firstName": `${firstName}`,
-        "lastName": `${lastName}`,
-        "email": `${email}`,
-        "states": `${states}`
+        method: 'post',
+        url: config.endpoint,
+        data: params
       }
-    );
+      ).then(function(data){
+          console.log("Adding data into db ...");
+    }).catch(function(error){
+          console.log(error);
+    });
   }
 
   render() {
     return (
-      <div>
         <form className="simpleForm" onSubmit={this.handleSubmit}>
           <label><div className="sfAsterix">*</div>FirstName:</label>
           <input className="sfInput" type="text" name="firstName" onChange={this.handleChange} value={this.state.firstName} maxLength="50" required />
@@ -63,7 +69,6 @@ export default class SimpleForm extends Component {
           </select>
           <button type="submit">Send</button>
         </form>
-      </div>
     );
   }
 }

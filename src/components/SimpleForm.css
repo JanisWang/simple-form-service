@@ -17,6 +17,14 @@ label, button {
     padding: 8px 10px;
 }
 
+.sfInput:focus {
+    border: none;
+}
+
+input:focus:required:invalid {
+    border: 2px solid #EE2A24;
+}
+
 button {
     box-shadow: none;
     color: #fff;
