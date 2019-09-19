@@ -38,7 +38,7 @@ export default class SimpleForm extends Component {
     await axios(
       {
         method: 'post',
-        url: config.endpoint,
+        url: config.endpointDev,
         data: params
       }
       ).then(function(data){
