@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from 'axios';
 import uuid4 from 'uuid4';
 import "./SimpleForm.css";
+import SelectOption from "./SelectOption.js";
 import config from "../config.json"
 
 export default class SimpleForm extends Component {
@@ -48,6 +49,11 @@ export default class SimpleForm extends Component {
   }
 
   render() {
+    let selectOption = [];
+    let stateList = ['NSW', 'VIC', 'WA', 'SA', 'TAS', 'QLD', 'NT', 'LALALA'];
+    stateList.map((element)=>{
+      selectOption.push(<SelectOption stateValue={element} />);
+    })
     return (
         <form className="simpleForm" onSubmit={this.handleSubmit}>
           <label><div className="sfAsterix">*</div>FirstName:</label>
@@ -59,13 +65,7 @@ export default class SimpleForm extends Component {
           <label><div className="sfAsterix">*</div>State: </label>
           <select className="sfInput" name="states" onChange={this.handleChange} required >
             <option value=''>-</option>
-            <option value='NSW'>NSW</option>
-            <option value='VIC'>VIC</option>
-            <option value='WA'>WA</option>
-            <option value='SA'>SA</option>
-            <option value='TAS'>TAS</option>
-            <option value='QLD'>QLD</option>
-            <option value='NT'>NT</option>
+            {selectOption}
           </select>
           <button type="submit">Send</button>
         </form>
